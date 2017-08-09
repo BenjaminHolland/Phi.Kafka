@@ -1,0 +1,15 @@
+version: 1.0.{build}
+branches:
+  only:
+  - master
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+build:
+  publish_nuget: true
+  publish_nuget_symbols: true
+  verbosity: minimal
+deploy:
+- provider: NuGet
+  api_key:
+    secure: ykxmIGM1+4Q1l8cel1oh6PJQhKiUyiAd4/4U99eekSlUWyaQEyPG45r6++BKe0hM
