@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phi.Kafka.Fluent", "Phi.Kafka.Fluent\Phi.Kafka.Fluent.csproj", "{EA4C1C66-C020-44D0-B33A-84CD4CC1697E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phi.Kafka.Sandbox.Cli", "Phi.Kafka.Sandbox.Cli\Phi.Kafka.Sandbox.Cli.csproj", "{0F1E7460-BC28-4C2F-8EF3-984155F7D255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phi.Kafka.Active", "Phi.Kafka.Active\Phi.Kafka.Active.csproj", "{B1428366-067D-446D-B986-490116FCAEA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phi.Kafka.Fluent.Active", "Phi.Kafka.Fluent.Active\Phi.Kafka.Fluent.Active.csproj", "{19631146-3994-4DC1-BF49-A04D2E346D59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{A1ADC15C-8697-4C35-AC41-F6AA4AB040C7}"
+	ProjectSection(SolutionItems) = preProject
+		Phi.Kafka.Fluent\Phi.Kafka.Fluent.csproj.nuspec = Phi.Kafka.Fluent\Phi.Kafka.Fluent.csproj.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA4C1C66-C020-44D0-B33A-84CD4CC1697E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4C1C66-C020-44D0-B33A-84CD4CC1697E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4C1C66-C020-44D0-B33A-84CD4CC1697E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA4C1C66-C020-44D0-B33A-84CD4CC1697E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1E7460-BC28-4C2F-8EF3-984155F7D255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1E7460-BC28-4C2F-8EF3-984155F7D255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1E7460-BC28-4C2F-8EF3-984155F7D255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1E7460-BC28-4C2F-8EF3-984155F7D255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1428366-067D-446D-B986-490116FCAEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1428366-067D-446D-B986-490116FCAEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1428366-067D-446D-B986-490116FCAEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1428366-067D-446D-B986-490116FCAEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19631146-3994-4DC1-BF49-A04D2E346D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19631146-3994-4DC1-BF49-A04D2E346D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19631146-3994-4DC1-BF49-A04D2E346D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19631146-3994-4DC1-BF49-A04D2E346D59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
