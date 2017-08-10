@@ -32,11 +32,11 @@ A set of extensions to Phi.Kafka.Fluent that expose the integrations provided by
 This part of the library is provided mostly for completeness and separability. It's a bit goofy to provide finalizers during configuration for one part of the library and not the other, but there may be someone who wants to use the fluent syntax wrap the consumer themselves. This should be possible without pulling in Rx and Ix.
 
 # TODO
-[-] &nbsp;Stop publishing new versions every time changes are made to any file.
-[-] &nbsp;XML Documentation for public classes and interfaces
-[-] &nbsp;Source/Debug Symbol Publishing
-[-] &nbsp;Wiki Documentation
-[-] &nbsp;Improvements to the Phi.Kafka.Active Library, especially regarding manual polling controls.
+[ ] &nbsp;Stop publishing new versions every time changes are made to any file.
+[ ] &nbsp;XML Documentation for public classes and interfaces
+[ ] &nbsp;Source/Debug Symbol Publishing
+[ ] &nbsp;Wiki Documentation
+[ ] &nbsp;Improvements to the Phi.Kafka.Active Library, especially regarding manual polling controls.
 **∞ &nbsp;Maintenence**
 **∞ &nbsp;Keep up to date with Confluent.Kafka**
  
