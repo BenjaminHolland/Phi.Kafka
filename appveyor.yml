@@ -15,7 +15,7 @@ build:
   verbosity: minimal
 
 before_package:
-- cmd: nuget pack Deploy/Phi.Kafka.Fluent.nuspec -Version %APPVEYOR_BUILD_VERSION%
+- cmd: nuget pack Deploy/Phi.Kafka.Fluent.csproj.nuspec -Version %APPVEYOR_BUILD_VERSION%
 
 artifacts:
 - path: /.\*.nupkg/
