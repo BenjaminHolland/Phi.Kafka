@@ -1,0 +1,28 @@
+aaw<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Phi.Kafka.Active</id>
+    <version>$version$</version>
+    <authors>Benjamin Holland</authors>
+    <owners>Benjamin Holland</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>https://github.com/BenjaminHolland/Phi.Kafka</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Kafka Reactive and Enumerable Library</description>
+    <releaseNotes>
+        
+    </releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Kafka Fluent Apache</tags>
+    <dependencies>
+      <dependency id="Confluent.Kafka" version="0.11.0.0" />
+        <dependency id="System.Reactive" version="3.1.1" />
+
+        <dependency id="System.Interactive" version="3.1.1" />
+    </dependencies>
+  </metadata>
+    <files>
+        <file src="../Phi.Kafka.Active\bin\Release\Phi.Kafka.Active.dll" target="lib\net45"/>
+    </files>
+</package>
