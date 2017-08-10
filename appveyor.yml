@@ -7,10 +7,19 @@ configuration: Release
 platform: Any CPU
 before_build:
     - nuget restore
+
 build:
   publish_nuget: true
+  include_nuget_references: true
   publish_nuget_symbols: true
   verbosity: minimal
+
+before_package:
+- cmd: nuget pack Deploy/Phi.Kafka.Fluent.nuspec -Version %APPVEYOR_BUILD_VERSION%
+
+artifacts:
+- path: /.\*.nupkg/
+  name: Nuget Package
 
 deploy:
 - provider: NuGet
