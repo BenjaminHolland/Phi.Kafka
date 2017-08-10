@@ -23,7 +23,8 @@ Provides integration with System.Reactive and System.Interactive, allowing clien
 Providing messages as either an `IEnumerable<Message<TKey,TValue>>` or an `IObservable<Message<TKey,TValue>>` gives pretty good coverage of the possible use cases. *Phi.Active.Kafka* provides these in two flavors, **Active** and **Passive**. **Active** sequences run an automatic polling loop. **Passive** sequences require/allow you to handle the polling yourself, or use one of the overloads to feed in requests for polling.[1]
 
 
-## Phi.Kafka.Fluent.Active: COMING VERY SOON
+## [Phi.Kafka.Fluent.Active](https://www.nuget.org/packages/Phi.Kafka.Fluent.Active/)
+
 **Objective**:
 A set of extensions to Phi.Kafka.Fluent that expose the integrations provided by Phi.Kafka.Active during fluent configuration.
 
