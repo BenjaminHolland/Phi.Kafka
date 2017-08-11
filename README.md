@@ -33,7 +33,7 @@ This part of the library is provided mostly for completeness and separability. I
 
 # TODO
 - [x] Stop publishing new versions every time changes are made to any file.
-- [ ] XML Documentation for public classes and interfaces
+- [ ] XML Documentation for public classes and interfaces **In Progress**
 - [ ] Source/Debug Symbol Publishing
 - [ ] Wiki Documentation
 - [ ] Improvements to the Phi.Kafka.Active Library, especially regarding manual polling controls.
