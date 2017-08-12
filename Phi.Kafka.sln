@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phi.Kafka.Fluent", "Phi.Kafka.Fluent\Phi.Kafka.Fluent.csproj", "{EA4C1C66-C020-44D0-B33A-84CD4CC1697E}"
 EndProject
@@ -13,6 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phi.Kafka.Fluent.Active", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{A1ADC15C-8697-4C35-AC41-F6AA4AB040C7}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
 		Phi.Kafka.Fluent\Phi.Kafka.Fluent.csproj.nuspec = Phi.Kafka.Fluent\Phi.Kafka.Fluent.csproj.nuspec
 	EndProjectSection
 EndProject
