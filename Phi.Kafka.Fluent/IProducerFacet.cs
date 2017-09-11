@@ -6,7 +6,7 @@ namespace Phi.Kafka.Fluent
         IProducerFacet SetIdentity(Action<IIdentityFacet> assembler);
         IProducerFacet SetDebug(Action<IDebugFacet> assembler);
         IProducerFacet SetBrokers(Action<IBrokerListFacet> assembler);
-        IProducerFacet SetCustomer(Action<ICustomFacet> assembler);
+        IProducerFacet SetCustom(Action<ICustomFacet> assembler);
         IProducerFacet SetFinalizers(Action<IProducerFinalizerListFacet> assembler);
     }
     public interface IProducerFacet<TKey, TValue>

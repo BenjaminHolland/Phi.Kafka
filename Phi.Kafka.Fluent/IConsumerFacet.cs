@@ -6,7 +6,7 @@ namespace Phi.Kafka.Fluent
         IConsumerFacet SetIdentity(Action<IIdentityFacet> assembler);
         IConsumerFacet SetAutoCommit(Action<IAutoCommitFacet> assembler);
         IConsumerFacet SetBrokers(Action<IBrokerListFacet> assmebler);
-        IConsumerFacet SetCustomer(Action<ICustomFacet> assembler);
+        IConsumerFacet SetCustom(Action<ICustomFacet> assembler);
         IConsumerFacet SetDebug(Action<IDebugFacet> assembler);
         IConsumerFacet SetFinalizers(Action<IConsumerFinalizerListFacet> assembler);
 

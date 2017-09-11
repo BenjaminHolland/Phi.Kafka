@@ -6,14 +6,31 @@ namespace Phi.Kafka.Fluent
 {
     public static class SubscriptionFinalizers
     {
-        public static Action<Consumer<TKey,TValue>> Subscribe<TKey,TValue>(this IConsumerFinalizers<TKey,TValue> shim,string topic)
+        public static Action<Consumer> Subscribe(this IConsumerFinalizers shim, string topic, Offset initialPosition)
+        {
+            return consumer =>
+            {
+                void InterceptAssignments(object sender, List<TopicPartition> assignments)
+                {
+                    consumer.OnPartitionsAssigned -= InterceptAssignments;
+                    var alteredAssignments = from tp in assignments
+                                             select new TopicPartitionOffset(tp, tp.Topic.Equals(topic) ? initialPosition : Offset.Invalid);
+                    consumer.Assign(alteredAssignments);
+                }
+            };
+        }
+        public static Action<Consumer> Subscribe(this IConsumerFinalizers shim, string topic)
+        {
+            return consumer => consumer.Subscribe(topic);
+        }
+        public static Action<Consumer<TKey, TValue>> Subscribe<TKey, TValue>(this IConsumerFinalizers<TKey, TValue> shim, string topic)
         {
             return consumer =>
             {
                 consumer.Subscribe(topic);
             };
         }
-        public static Action<Consumer<TKey,TValue>> Subscribe<TKey,TValue>(this IConsumerFinalizers<TKey,TValue> shim,string topic,Offset initialPosition)
+        public static Action<Consumer<TKey, TValue>> Subscribe<TKey, TValue>(this IConsumerFinalizers<TKey, TValue> shim, string topic, Offset initialPosition)
         {
             return consumer =>
             {
