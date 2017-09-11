@@ -16,7 +16,8 @@
     <copyright>Copyright 2017</copyright>
     <tags>Kafka Fluent Apache</tags>
     <dependencies>
-      <dependency id="Confluent.Kafka" version="0.11.0.0" />
+        <dependency id="Confluent.Kafka" version="0.11.0.0" />
+        <depedency id="librdkafka.redist" version="0.11.0.0"/>
     </dependencies>
   </metadata>
     <files>
