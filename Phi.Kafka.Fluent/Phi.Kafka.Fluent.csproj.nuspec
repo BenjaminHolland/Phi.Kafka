@@ -5,12 +5,12 @@
     <version>$version$</version>
     <authors>Benjamin Holland</authors>
     <owners>Benjamin Holland</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
     <projectUrl>https://github.com/BenjaminHolland/Phi.Kafka</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Kafka Fluent Configuration Library</description>
     <releaseNotes>
+        V1.0.22:
+        Exposed fluent configuration for non-generic consumers and producers.
         
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
