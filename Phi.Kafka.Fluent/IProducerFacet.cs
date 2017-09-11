@@ -1,6 +1,14 @@
 ﻿using System;
 namespace Phi.Kafka.Fluent
 {
+    public interface IProducerFacet
+    {
+        IProducerFacet SetIdentity(Action<IIdentityFacet> assembler);
+        IProducerFacet SetDebug(Action<IDebugFacet> assembler);
+        IProducerFacet SetBrokers(Action<IBrokerListFacet> assembler);
+        IProducerFacet SetCustomer(Action<ICustomFacet> assembler);
+        IProducerFacet SetFinalizers(Action<IProducerFinalizerListFacet> assembler);
+    }
     public interface IProducerFacet<TKey, TValue>
     {
         IProducerFacet<TKey, TValue> SetIdentity(Action<IIdentityFacet> assembler);

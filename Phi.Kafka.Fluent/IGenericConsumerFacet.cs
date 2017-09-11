@@ -1,16 +1,6 @@
 ﻿using System;
 namespace Phi.Kafka.Fluent
 {
-    public interface IConsumerFacet
-    {
-        IConsumerFacet SetIdentity(Action<IIdentityFacet> assembler);
-        IConsumerFacet SetAutoCommit(Action<IAutoCommitFacet> assembler);
-        IConsumerFacet SetBrokers(Action<IBrokerListFacet> assmebler);
-        IConsumerFacet SetCustomer(Action<ICustomFacet> assembler);
-        IConsumerFacet SetDebug(Action<IDebugFacet> assembler);
-        IConsumerFacet SetFinalizers(Action<IConsumerFinalizerListFacet> assembler);
-
-    }
     public interface IConsumerFacet<TKey, TValue>
     {
         IConsumerFacet<TKey, TValue> SetIdentity(Action<IIdentityFacet> assembler);
