@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{A1ADC15C-8697-4C35-AC41-F6AA4AB040C7}"
 	ProjectSection(SolutionItems) = preProject
 		appveyor.yml = appveyor.yml
+		Deploy\Phi.Kafka.Active.nuspec = Deploy\Phi.Kafka.Active.nuspec
+		Deploy\Phi.Kafka.Fluent.Active.nuspec = Deploy\Phi.Kafka.Fluent.Active.nuspec
 		Phi.Kafka.Fluent\Phi.Kafka.Fluent.csproj.nuspec = Phi.Kafka.Fluent\Phi.Kafka.Fluent.csproj.nuspec
 	EndProjectSection
 EndProject
