@@ -16,21 +16,31 @@ Finally, I just think continuation-style configuration is cool.
 
 ## [Phi.Kafka.Active](https://www.nuget.org/packages/Phi.Kafka.Active/)
 **Objective**:
-Provides integration with System.Reactive and System.Interactive, allowing client code to easily treat Kafka consumers as observables enumerables.
+Provides integration with System.Reactive and System.Interactive, allowing client code to easily treat Kafka consumers as observables or enumerables.
 
 **Reasoning**: Confluent.Kafka provides a couple of...less than intuitive methods for retrieving messages. In addition to the problems of working with polled systems in general, I found it a bit funky to deal with for any non-trivial application. Providing the messages via standard C# sequence idioms means less time thinking about what thread your call to Poll is running on and more time thinking about what you actually want to do with your data. 
 
-Providing messages as either an `IEnumerable<Message<TKey,TValue>>` or an `IObservable<Message<TKey,TValue>>` gives pretty good coverage of the possible use cases. *Phi.Active.Kafka* provides these in two flavors, **Active** and **Passive**. **Active** sequences run an automatic polling loop. **Passive** sequences require/allow you to handle the polling yourself, or use one of the overloads to feed in requests for polling.[1]
+Providing messages as either an `IEnumerable<Message<TKey,TValue>>` or an `IObservable<Message<TKey,TValue>>` gives pretty good coverage of the possible use cases. *Phi.Active.Kafka* provides these in two flavors, **Active** and **Passive**. **Active** sequences run an automatic polling loop. **Passive** sequences require/allow you to handle the polling yourself, or use one of the overloads to feed in requests for polling.[¹](#1)
 
 
-## Phi.Kafka.Fluent.Active: COMING VERY SOON
+## [Phi.Kafka.Fluent.Active](https://www.nuget.org/packages/Phi.Kafka.Fluent.Active/)
+
 **Objective**:
 A set of extensions to Phi.Kafka.Fluent that expose the integrations provided by Phi.Kafka.Active during fluent configuration.
 
 **Reasoning**:
 This part of the library is provided mostly for completeness and separability. It's a bit goofy to provide finalizers during configuration for one part of the library and not the other, but there may be someone who wants to use the fluent syntax wrap the consumer themselves. This should be possible without pulling in Rx and Ix.
 
+# TODO
+- [x] Stop publishing new versions every time changes are made to any file.
+- [ ] XML Documentation for public classes and interfaces **In Progress**
+- [ ] Source/Debug Symbol Publishing
+- [ ] Wiki Documentation
+- [ ] Improvements to the Phi.Kafka.Active Library, especially regarding manual polling controls.
+- [ ] **∞ Maintenence**
+- [ ] **∞ Keep up to date with Confluent.Kafka**
+ 
 ### Notes
 Like the Confluent.Kafka library, this library should be considered in flux. While the general gist of each library is more or less stable, specifics should all be regarded as unstable. 
 
-[1]: This will be explained in documentation that hasn't been written yet. Best check out the source.
+<a id="1"></a>¹ This will be explained in documentation that hasn't been written yet. Best check out the source.

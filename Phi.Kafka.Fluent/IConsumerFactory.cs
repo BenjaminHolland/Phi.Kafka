@@ -1,6 +1,5 @@
 ﻿using System;
 using Confluent.Kafka;
-using Phi.Kafka.Fluent;
 namespace Phi.Kafka.Fluent
 {
     public interface IConsumerFactory
